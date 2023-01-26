@@ -13,7 +13,7 @@ const generateAction = async (req, res) => {
 
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
-    prompt: `Write a song in the style of Taylor Swift about the following topic: ${req.body.userInput}\nVerse 1:`,
+    prompt: `Write a song in the style of Taylor Swift about the following topic: ${req.body.userInput}\n Verse 1:`,
     temperature: 0.7,
     max_tokens: 1250,
   });
